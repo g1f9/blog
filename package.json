@@ -1,0 +1,33 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "走走停停，写写记记",
+  "main": "no",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"vuepress dev docs",
+    "build":"vuepress build docs",
+    "pub":"./deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g1f9/blog.git"
+  },
+  "keywords": [
+    "g1f9",
+    "blog",
+    "frontend"
+  ],
+  "author": "g1f9",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/g1f9/blog/issues"
+  },
+  "homepage": "https://github.com/g1f9/blog#readme",
+  "devDependencies": {
+    "vuepress": "^1.0.3"
+  }
+}
