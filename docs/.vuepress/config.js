@@ -41,8 +41,16 @@ module.exports = {
           {
             text: "扩展阅读",
             link: "/frontend/advanced/"
+          },
+          {
+            text: "笔记",
+            link: "/frontend/note/"
           }
         ]
+      },
+      {
+        text: "工具",
+        link: "/tools/"
       }
     ]
   }
