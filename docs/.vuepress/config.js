@@ -45,6 +45,10 @@ module.exports = {
           {
             text: "笔记",
             link: "/frontend/note/"
+          },
+          {
+            text: "资源收集",
+            link: "/frontend/source/"
           }
         ]
       },

@@ -1,7 +1,7 @@
 # Babel
 
 ## 概述
-> 以下论述基于 babel7。在 babel7中，插件名以 @babel 开头
+> 以下内容均基于 babel7。在 babel7中，插件名以 @babel 开头
 
 Babel 是一个 JavaScript 编译器，工具链，主要用于将 ES6 版本的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。babel 主要能做以下事情
 
@@ -31,7 +31,7 @@ npm install --save-dev @babel/preset-env
 
 上述预设默认情况下支持所有最新的 JavaScript 特性。
 
-@babel/preset-env 也支持 polyfill，可以自动根据使用情况自动和目标环境自动引入对应的文件，传入 useBuiltIns，和对应的 corejs 参数即可。@babel-core+@babel/preset-env 已经能很好工作了，但是在编译过后的文件中，存在大量重复定义的帮助方法，会影响最后的整体体积。为了进一步优化，引入 @babel/plugin-transform-runtime 这个插件。默认情况下这个插件可以把这些内联的帮助函数定义改成从 runtime/helpers 中引入。当然这个插件也不只这个功能。
+@babel/preset-env 也支持 polyfill，可以根据使用情况和目标环境自动引入对应的文件，传入 useBuiltIns，和对应的 corejs 参数即可。@babel-core+@babel/preset-env 已经能很好工作了，但是在编译过后的文件中，存在大量重复定义的帮助方法，会影响最后的整体体积。为了进一步优化，引入 @babel/plugin-transform-runtime 这个插件。默认情况下这个插件可以把这些内联的帮助函数定义改成从 runtime/helpers 中引入。当然这个插件也不只这个功能。
 
 ### 简单案例
 
